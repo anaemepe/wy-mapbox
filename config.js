@@ -121,7 +121,7 @@ var config = {
             description: 'When a legal entity does not have an office, the agent is responsible for receiving paperwork, and their address serves as the official address for the entities they represent.<br> In Wyoming, this has resulted in massive numbers of entities sharing a single address—that of their agents. Take Registered Agents Inc., located at 30 N Gould St Ste N: their address is the official home of 245,697 entities.<br>Photo credit: Google Maps',
             location: {
                 center: [-106.95438, 44.79741],
-                zoom: 16,
+                zoom: 18,
                 pitch: 69.50,                
                 bearing: -116.80
             },
