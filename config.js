@@ -10,7 +10,7 @@ var config = {
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
-    title: 'The Title Text of this Story',
+  //  title: 'The Title Text of this Story',
   //  subtitle: 'A descriptive and interesting subtitle to draw in the reader',
   //  byline: 'By Ana Muñoz',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
@@ -19,8 +19,37 @@ var config = {
             id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
+            title: 'A NEW ERA FOR U.S. LEGAL ENTITIES?',
+            description: 'For many years, Delaware has led the number of annual incorporations per capita in the US.<br>Not anymore.',
+            image: '',
+            location: {
+                center: [-87.34559, 37.98829],
+                zoom: 3.88,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                 {
+                     layer: 'Delaware',
+                     opacity: 1,
+                 }
+            ],
+            onChapterExit: [
+                 {
+                     layer: 'Delaware',
+                     opacity: 0
+                 }
+            ]
+        },
+        {
+            id: 'second-identifier',
+            alignment: 'left',
+            hidden: false,
             title: 'WYOMING, THE NEW INCORPORATIONS LEADER',
-            description: 'Wyoming is the US state with the highest number of legal entities per 1,000 inhabitants.<br>A legal entity is a company on paper. For a company to exist, it must engage in some form of business activity. whether by selling products or offering services. So while all companies are legal entities, not all legal entities can be considered companies.',
+            description: 'Starting last year, Wyoming now leads all states in the number of legal entities per 1,000 inhabitants.<br>A legal entity is a company on paper. For a company to exist, it must engage in some form of business activity. whether by selling products or offering services. So while all companies are legal entities, not all legal entities can be considered companies.',
             image: 'WyomingGrowthW.svg',
             location: {
                 center: [-109.636, 42.861],
@@ -32,25 +61,24 @@ var config = {
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
+                 {
+                     layer: 'wystate',
+                     opacity: 0.3,
+                 }
             ],
             onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
+                 {
+                    // layer: 'wystate',
+                    // opacity: 0
+                 }
             ]
         },
         {
-            id: 'second-identifier',
+            id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            //title: 'Chapter Two',
-            description: 'Most LLC, a very popular form of legal entity, are registered in four cities: Sheridan, Cheyenne, Buffalo and Casper.<br>Sheridan alone hosts 42% of all Wyoming LLC.',
+            title: '4 CITIES, THOUSANDS OF ENTITIES',
+            description: 'In Wyoming, most LLC, a very popular form of legal entity, are registered in four cities: Sheridan, Cheyenne, Buffalo and Casper.<br>Sheridan alone hosts 42% of all Wyoming LLC.',
             location: {
                 center: [-107.060, 43.024],
                 zoom: 6.48,
@@ -70,48 +98,56 @@ var config = {
                 {
                     layer: 'wyomingcities',
                     opacity: 1,
-                    duration: 5000
+                    //duration: 5000
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'wyomingcities',
                     opacity: 0
+                },
+                {
+                    layer: 'wystate',
+                    opacity: 0
                 }
             ]
         },
         {
-            id: 'third-identifier',
+            id: 'fourth-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Chapter Three',
+            title: 'REGISTERED AGENTS PLAY A KEY ROLE',
             image: '30NGould.png',
-            description: 'Registered Agents Inc. is located in 30 N Gould St Ste N. This address is also home to 245,697 legal entities.<br>Photo credit: Google Maps',
+            description: 'When a legal entity does not have an office, the agent is responsible for receiving paperwork, and their address serves as the official address for the entities they represent.<br> In Wyoming, this has resulted in massive numbers of entities sharing a single address—that of their agents. Take Registered Agents Inc., located at 30 N Gould St Ste N: their address is the official home of 245,697 entities.<br>Photo credit: Google Maps',
             location: {
-                center: [-106.955, 44.798],
+                center: [-106.95438, 44.79741],
                 zoom: 18,
-                pitch: 40,
-                bearing: 40
+                pitch: 69.50,                
+                bearing: -116.80
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
                 {
-                    layer: '30GouldBuilding',
-                    opacity: 1,
-                    duration: 2000
-                }
+                    layer: '30Gould',
+                    opacity: 1
+                }    
             ],
-            onChapterExit: []
-        },
+            onChapterExit: [
+                {
+                    layer: '30Gould',
+                    opacity: 0
+                }
+            ]
+        },    
         {
-            id: 'fourth-identifier',
+            id: 'fifth-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Chapter Four',
+           // title: 'Chapter Four',
             image: '1309Coffeen.png',
-            description: 'At 1309 Coffeen Avenue we find, Cloud Peak Law LLC, the second largest agent in Wyoming. There are 61,767 entities registered at this address.<br>Photo credit: Google Maps',
+            description: 'At 1309 Coffeen Avenue we find Cloud Peak Law LLC, the second largest agent in Wyoming after Registered Agents Inc. There are 61,767 entities registered at this address.<br>Photo credit: Google Maps',
             location: {
                 center: [-106.941, 44.784],
                 zoom: 17.13,
@@ -123,7 +159,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: '30GouldBuilding',
+                    layer: '1309coffeenbuilding',
                     opacity: 1,
                     duration: 2000
                 }
@@ -131,11 +167,11 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'fifth-chapter',
+            id: 'sixth-chapter',
             alignment: 'left',       //fully for centre
             hidden: false,
-            //title: 'Chapter Four',
-            image: 'wy_waffle.svg',
+            title: '12 TIMES MORE NEW LLC IN WYOMING COMPARED TO AVERAGE',
+            // image: 'wy_waffle.svg',
             description: 'Incorporations in Wyoming have continued to increase in 2024, although at a slower pace.<br>Last year, there were 347.92 new LLC per 1,000 people, 12 times more than the national average.*<br>*Not counting Delaware and Puerto Rico.',
             location: {
                 center: [-109.636, 42.861],
