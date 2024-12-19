@@ -13,7 +13,7 @@ var config = {
   //  title: 'The Title Text of this Story',
   //  subtitle: 'A descriptive and interesting subtitle to draw in the reader',
   //  byline: 'By Ana Muñoz',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: <a href="https://opencorporates.com" target="_blank">OpenCorporates</a>. <br> Created by Ana Muñoz using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'slug-style-id',
