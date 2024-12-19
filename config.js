@@ -118,7 +118,7 @@ var config = {
             hidden: false,
             title: 'REGISTERED AGENTS PLAY A KEY ROLE',
             image: '30NGould.png',
-            description: 'When a legal entity does not have an office, the agent is responsible for receiving paperwork, and their address serves as the official address for the entities they represent.<br> In Wyoming, this has resulted in massive numbers of entities sharing a single address—that of their agents. Take Registered Agents Inc., located at 30 N Gould St Ste N: their address is the official home of 245,697 entities.<br>Photo credit: Google Maps',
+            description: 'When a legal entity does not have an office, the agent is responsible for receiving paperwork, and their address serves as the official address for the entities they represent.<br> In Wyoming, this has resulted in massive numbers of entities sharing a single address—that of their agents.<br> Take Registered Agents Inc., located at 30 N Gould St Ste N: their address is the official home of 245,697 entities.<br>Photo credit: Google Maps',
             location: {
                 center: [-106.95438, 44.79741],
                 zoom: 18,
@@ -147,7 +147,7 @@ var config = {
             hidden: false,
            // title: 'Chapter Four',
             image: '1309Coffeen.png',
-            description: 'At 1309 Coffeen Avenue we find Cloud Peak Law LLC, the second largest agent in Wyoming after Registered Agents Inc. There are 61,767 entities registered at this address.<br>Photo credit: Google Maps',
+            description: 'At 1309 Coffeen Avenue we find Cloud Peak Law LLC, the second largest agent in Wyoming after Registered Agents Inc.<br> There are 61,767 entities registered at this address.<br>Photo credit: Google Maps',
             location: {
                 center: [-106.941, 44.784],
                 zoom: 17.13,
@@ -170,9 +170,9 @@ var config = {
             id: 'sixth-chapter',
             alignment: 'left',       //fully for centre
             hidden: false,
-            title: '12 TIMES MORE NEW LLC IN WYOMING COMPARED TO AVERAGE',
-            // image: 'wy_waffle.svg',
-            description: 'Incorporations in Wyoming have continued to increase in 2024, although at a slower pace.<br>Last year, there were 347.92 new LLC per 1,000 people, 12 times more than the national average.*<br>*Not counting Delaware and Puerto Rico.',
+            title: 'IN 2023, TWO AGENTS REPRESENTED 55% OF NEW ENTITIES',
+            image: 'agents_ranking.png',
+            description: 'Wyoming´s growing popularity as a place for new businesses is not making the agent market more diverse; instead, it is giving more market share to the top agents.',
             location: {
                 center: [-109.636, 42.861],
                 zoom: 5.7,
